@@ -1,0 +1,72 @@
+vegetablesprice={"Brinjal":20,"Potato":30,"Tomato":20,"Onion":40,"Pea":40,"Beans":20,"Jackfruit":50,}
+
+totalquantity={"Brinjal":10 ,"Potato":20,"Tomato":10,"total_Onion":20,"total_Pea":15,"total_Beans":30,"total_Jackfruits":30,}
+product=("totalquantity") 
+your_order=input("Enter your order:")
+if your_order in vegetablesprice:
+    print(f"Yes!...{your_order}  is available")
+    
+    quantity=int(input(f"How many {your_order} you want:"))
+    if your_order=="Brinjal":
+       print(f"Available total kg  {your_order} 20 ")
+       total=vegetablesprice["Brinjal"]*quantity
+       print(f"your total bill is {total}")
+       remaining_Brinjal = float(20-quantity)
+       print(f"Show remaining {your_order} quantity")
+       print("Remaining Brinjal:",remaining_Brinjal)
+    
+    elif your_order=="Potato":
+        print(f"Available total {your_order} quantity 20")
+        total=vegetablesprice["Potato"]*quantity
+        print(f"your total bill is {total}")
+        remaining_Potato=float(30-quantity) 
+        print(f"Show remaining {your_order} quantity")
+        print("Remaining Potato:",remaining_Potato)
+
+    elif your_order=="Tomato":
+        print(f"Available total kg {your_order} 10 ")
+        total=vegetablesprice["Tomato"]*quantity
+        print(f"your total bill is {total}")
+        remaining_Tomato=float(20-quantity) 
+        print(f"Show remaining {your_order} quantity")
+        print("Remaining Tomato:",remaining_Tomato)
+    
+    elif your_order=="Onion":
+        print(f"Available total kg {your_order} 30")
+        total=vegetablesprice["Onion"]*quantity
+        print(f"your total bill is {total}")
+        remaining=float(30-quantity)
+        print(f"Show remaining {your_order} quantity")
+        print("Remaining Onion:",remaining_Onion)
+
+    elif your_order=="Pea":
+        print(f"Available total kg {your_order} 15")
+        total=vegetablesprice["Pea"]*quantity
+        print(f"your total bill is {total}")
+        remaining_Pea=float(15-quantity) 
+        print(f"Show remaining {your_order} quantity")
+        print("Remaining Pea:",remaining_Pea)
+    
+    elif your_order=="Beans":
+        print(f"Available total  kg {your_order} 5")
+        total=vegetablesprice["Beans"]*quantity
+        print(f"your total bill is {total}")
+        remaining_Beans=float(5-quantity) 
+        print(f"Show remaining {your_order} quantity")
+        print("Remaining Beans:",remaining_Beans)
+    
+    elif your_order=="Jackfruit":
+        print(f"Available total  kg {your_order} 40 ")
+        total=vegetablesprice["Jackfruit"]*quantity
+        print(f"your total bill is {total}")
+        remaining_Jackfruit=float(40-quantity) 
+        print(f"Show remaining {your_order} quantity")
+        print("Remaining Jackfruit:",remaining_Jackfruit)
+else:
+    print(f"sorry {your_order} is not available")  
+    
+
+
+
+
+
